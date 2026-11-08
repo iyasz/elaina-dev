@@ -8,6 +8,7 @@ export const getRouter = () => {
 
   const router = createRouter({
     routeTree,
+    basepath: "/elaina-dev",
     context: { queryClient },
     scrollRestoration: true,
     // Lets Query own freshness; set caching defaults on the QueryClient, not the router.

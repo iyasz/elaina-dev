@@ -116,7 +116,7 @@ function Hero() {
 }
 
 function PhotoSlot() {
-  const [src, setSrc] = useState<string>("/images/profil_pic.jpeg");
+  const [src, setSrc] = useState<string>(`${import.meta.env.BASE_URL}images/profil_pic.jpeg`);
   const [over, setOver] = useState(false);
 
   const onDrop = (e: DragEvent<HTMLDivElement>) => {
